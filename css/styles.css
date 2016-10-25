@@ -1,0 +1,11 @@
+body {
+  font-family: fantasy;
+  font-size: 2em;
+}
+
+.form-group h3{
+  text-align: center;
+}
+#fortune {
+  display: none;
+}

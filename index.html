@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fortune Teller!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type = "text/css">
+    <link rel="stylesheet" href="css/styles.css" type = "text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h2>Learn Your Fortune</h2>
+      </div>
+      <form id="fortune_telling">
+        <div class="form-group">
+          <h3>In the past month, I have used the following modes of transportation to travel to work or school:</h3>
+          <input type="checkbox" name="transportation" value="active" checked> Riding a bike<br>
+          <input type="checkbox" name="transportation" value="active" checked>Driving a car<br>
+          <input type="checkbox" name="transportation" value="passive">Carpooling with others<br>
+          <input type="checkbox" name="transportation" value="active" checked>Walking<br>
+          <input type="checkbox" name="transportation" value="passive">Riding the bus<br>
+          <input type="checkbox" name="transportation" value="passive">Riding the train<br>
+          <input type="checkbox" name="transportation" value="passive">Riding the streetcar<br>
+          <input type="checkbox" name="transportation" value="passive">Taking a taxi<br>
+          <input type="checkbox" name="transportation" value="passive">Using a rideshare service like Lyft or Uber<br>
+          <input type="checkbox" name="transportation" value="active">Skateboarding<br>
+          <input type="checkbox" name="transportation" value="active">Rollerblading<br>
+          <input type="checkbox" name="transportation" value="active">Riding a scooter<br>
+        </div>
+
+        <div class="form-group">
+          <h3>In the past year, I have spent time:</h3>
+          <input type="checkbox" name="hobbies" value="art" checked>Painting<br>
+          <input type="checkbox" name="hobbies" value="nature">Hiking<br>
+          <input type="checkbox" name="hobbies" value="sport">Watching Sports<br>
+          <input type="checkbox" name="hobbies" value="art" checked>Drawing<br>
+          <input type="checkbox" name="hobbies" value="sport">Skateboarding<br>
+          <input type="checkbox" name="hobbies" value="nature">Camping<br>
+          <input type="checkbox" name="hobbies" value="sport">Riding a scooter<br>
+          <input type="checkbox" name="hobbies" value="art">Writing<br>
+          <input type="checkbox" name="hobbies" value="nature">Rock Climb<br>
+        </div>
+       <button type="submit">Tell Fortune</button>
+      </form>
+      <span id="fortune">
+        <p></p>
+      </span>
+    </div>
+  </body>
+</html>
