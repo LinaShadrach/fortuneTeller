@@ -14,39 +14,50 @@
         <h2>Learn Your Fortune</h2>
       </div>
       <form id="fortune_telling">
-        <div class="form-group">
-          <h3>In the past month, I have used the following modes of transportation to travel to work or school:</h3>
-          <input type="checkbox" name="transportation" value="active" checked> Riding a bike<br>
-          <input type="checkbox" name="transportation" value="active" checked>Driving a car<br>
-          <input type="checkbox" name="transportation" value="passive">Carpooling with others<br>
-          <input type="checkbox" name="transportation" value="active" checked>Walking<br>
-          <input type="checkbox" name="transportation" value="passive">Riding the bus<br>
-          <input type="checkbox" name="transportation" value="passive">Riding the train<br>
-          <input type="checkbox" name="transportation" value="passive">Riding the streetcar<br>
-          <input type="checkbox" name="transportation" value="passive">Taking a taxi<br>
-          <input type="checkbox" name="transportation" value="passive">Using a rideshare service like Lyft or Uber<br>
-          <input type="checkbox" name="transportation" value="active">Skateboarding<br>
-          <input type="checkbox" name="transportation" value="active">Rollerblading<br>
-          <input type="checkbox" name="transportation" value="active">Riding a scooter<br>
-        </div>
+        <div class="row box">
+          <div class="col-md-12">
+            <div class="form-group col-md-6 col-md-offset-3">
+              <h3>In the past month, I have used the following modes of transportation to travel to work or school:</h3>
+              <input type="checkbox" name="transportation" value="active"><span class="padding">Riding a bike</span><br>
+              <input type="checkbox" name="transportation" value="active"><span class="padding">Driving a car</span><br>
+              <input type="checkbox" name="transportation" value="passive"><span class="padding">Carpooling with others</span><br>
+              <input type="checkbox" name="transportation" value="active"><span class="padding">Walking</span><br>
+              <input type="checkbox" name="transportation" value="passive"><span class="padding">Riding the bus</span><br>
+              <input type="checkbox" name="transportation" value="passive"><span class="padding">Riding the train</span><br>
+              <input type="checkbox" name="transportation" value="passive"><span class="padding">Riding the streetcar</span><br>
+              <input type="checkbox" name="transportation" value="passive"><span class="padding">Taking a taxi</span><br>
+              <input type="checkbox" name="transportation" value="passive"><span class="padding">Using a rideshare service like Lyft or Uber</span><br>
+              <input type="checkbox" name="transportation" value="active"><span class="padding">Skateboarding</span><br>
+              <input type="checkbox" name="transportation" value="active"><span class="padding">Rollerblading</span><br>
+              <input type="checkbox" name="transportation" value="active"><span class="padding">Riding a scooter</span><br>
+            </div>
+          </div>
 
-        <div class="form-group">
-          <h3>In the past year, I have spent time:</h3>
-          <input type="checkbox" name="hobbies" value="art" checked>Painting<br>
-          <input type="checkbox" name="hobbies" value="nature">Hiking<br>
-          <input type="checkbox" name="hobbies" value="sport">Watching Sports<br>
-          <input type="checkbox" name="hobbies" value="art" checked>Drawing<br>
-          <input type="checkbox" name="hobbies" value="sport">Skateboarding<br>
-          <input type="checkbox" name="hobbies" value="nature">Camping<br>
-          <input type="checkbox" name="hobbies" value="sport">Riding a scooter<br>
-          <input type="checkbox" name="hobbies" value="art">Writing<br>
-          <input type="checkbox" name="hobbies" value="nature">Rock Climb<br>
+          <div class="col-md-12">
+            <div class="form-group col-md-6 col-md-offset-3">
+              <h3>In the past year, I have spent time:</h3>
+              <input type="checkbox" name="hobbies" value="art"><span class="padding">Painting</span><br>
+              <input type="checkbox" name="hobbies" value="nature"><span class="padding">Hiking</span><br>
+              <input type="checkbox" name="hobbies" value="sport"><span class="padding">Watching Sports</span><br>
+              <input type="checkbox" name="hobbies" value="art"><span class="padding">Drawing</span><br>
+              <input type="checkbox" name="hobbies" value="sport"><span class="padding">Skateboarding</span><br>
+              <input type="checkbox" name="hobbies" value="nature"><span class="padding">Camping</span><br>
+              <input type="checkbox" name="hobbies" value="sport"><span class="padding">Riding a scooter</span><br>
+              <input type="checkbox" name="hobbies" value="art"><span class="padding">Writing</span><br>
+              <input type="checkbox" name="hobbies" value="nature"><span class="padding">Rock Climb</span><br>
+            </div>
+          </div>
+          <div class="form-group col-md-6 col-md-offset-3 text-center">
+            <button class="btn btn-default btn-lg" type="submit">Tell Fortune</button>
+          </div>
         </div>
-       <button type="submit">Tell Fortune</button>
       </form>
-      <span id="fortune">
-        <p></p>
-      </span>
+      <div class="row fortuneRow">
+        <div class="col-md-12 text-center" id="fortune">
+          <p></p>
+          <button id="refresh" type="button" class="btn btn-default btn-lg">Re-shuffle the cards of fate</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

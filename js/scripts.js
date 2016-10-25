@@ -8,7 +8,7 @@ var transportation = [],  hobbies = [], relevantInfo = [], fortune = [];
 var tellFortune = function(){
   relevantInfo.forEach(function(info){
     if (info === "passive"){
-      fortune.push("5$ will find you on the bus. ");
+      fortune.push("$5 will find you on the bus. ");
     }
     if (info === "active"){
       fortune.push("Every light will be green for you. ");
@@ -23,7 +23,6 @@ var tellFortune = function(){
       fortune.push("Athletic victory will be yours to have today. ");
     }
   });
-  console.log(fortune);
   return fortune;
 };
 
@@ -61,12 +60,18 @@ $(document).ready(function(){
     $("input:checkbox[name=hobbies]:checked").each(function(){
       hobbies.push($(this).val());
     });
-    console.log(countChecks(hobbies, 1));
-    console.log(countChecks(transportation, 2));
-    $('#fortune_telling').hide();
+    countChecks(hobbies, 1);
+    countChecks(transportation, 2);
     tellFortune();
-
-    $("#fortune").show();
-    $("#fortune").children().text(makeString(fortune));
+    $("#fortune").children('p').text(makeString(fortune));
+    if(fortune.length === 0){
+      $("#fortune").children('p').text("The eyes of fate cannot see with such little guidance. (select more answers!)");
+    }
+    $('#fortune_telling').fadeOut(1200);
+    $("#fortune").fadeIn(2000, "linear");
   });
+
+  $('#refresh').click(function(){
+    location.reload();
+  })
 });
